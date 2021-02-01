@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useCharacters, useLocations } from "./api/useData";
+import Description from "./components/description/description";
 
 
 function App() {
@@ -14,10 +15,23 @@ function App() {
 
   return(
     <div className="landingPage">
-      <button className="characters"></button>
-      <button className="locations"></button>
+      <div className="button-wrapper">
+        <button className="btn-char" onMouseDown={showDescript} onMouseUp={hideDescript}>Characters</button>
+        <button className="btn-loc" onMouseDown={showDescript} onMouseUp={hideDescript}>Locations</button>
+      </div>
+      <Description />
     </div>
   );
+  
+  function showDescript() {
+    const _descript = document.querySelector('.descript');
+    _descript.style.visibility = 'visible';
+  }
+
+  function hideDescript() {
+    const _descript = document.querySelector('.descript');
+    _descript.style.visibility = 'hidden';
+  }
 }
 
 export default App;

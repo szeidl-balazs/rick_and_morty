@@ -9,20 +9,46 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
 }
 
-.App {
+
   .landingPage {
     display: flex;
     justify-content: center;
     align-items: center;
-    button {
-      size: 300px;
-      background: chartreuse;
-      border-radius: 10px;
+
+    .button-wrapper {
+      width: 220px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 60px;
+      
+      button {        
+        width: 80px;
+        height: 30px;
+        background: #cf112b;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.472) inset;
+        border-radius: 10px;
+        border: none;
+        
+        &:focus {
+          border: none;
+          outline: none;          
+          background: #cf112b;
+        }
+
+        &:active {
+          background: #cf112b;
+          box-shadow: none;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+          
     }
   }
-  
-}
