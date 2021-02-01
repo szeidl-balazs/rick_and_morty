@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/rick_and_morty.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50vw;
+  height: 100vh;
+}
+
+.App {
+  .landingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      size: 300px;
+      background: chartreuse;
+      border-radius: 10px;
+    }
+  }
+  
+}

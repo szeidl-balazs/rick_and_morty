@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { useCharacters, useLocations } from "./api/useData";
 
+
 function App() {
   const characters = useCharacters(1);
   const locations = useLocations(1);
@@ -11,7 +12,12 @@ function App() {
   console.log("Locations data: ");
   console.log(locations);
 
-  return <div className="App">Take a look at the console! (F12)</div>;
+  return(
+    <div className="landingPage">
+      <button className="characters"></button>
+      <button className="locations"></button>
+    </div>
+  );
 }
 
 export default App;
