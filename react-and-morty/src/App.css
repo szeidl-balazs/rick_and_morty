@@ -35,7 +35,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  bottom: 60px;
+  bottom: 90px;
 }
 
 .landingPage .button-wrapper button {

@@ -8,11 +8,14 @@ function App() {
   const characters = useCharacters(1);
   const locations = useLocations(1);
 
+  console.log(typeof characters.results);
   console.log("Characters data: ");
   console.log(characters);
   console.log("Locations data: ");
   console.log(locations);
 
+  
+  
   return(
     <div className="landingPage">
       <div className="button-wrapper">
@@ -22,7 +25,7 @@ function App() {
       <Description />
     </div>
   );
-  
+
   function showDescript() {
     const _descript = document.querySelector('.descript');
     _descript.style.visibility = 'visible';
@@ -32,6 +35,8 @@ function App() {
     const _descript = document.querySelector('.descript');
     _descript.style.visibility = 'hidden';
   }
+
+  
 }
 
 export default App;
