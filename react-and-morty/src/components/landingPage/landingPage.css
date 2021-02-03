@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.landingPage {
+  visibility: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 480px;
+}
+
+.landingPage img {
+  width: 500px;
+  position: absolute;
+  bottom: 150px;
+}
+
+.landingPage .button-wrapper {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 80px;
+}
+
+.landingPage .button-wrapper button {
+  width: 80px;
+  height: 30px;
+  background: #cf112b;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.472) inset;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.472) inset;
+  border-radius: 10px;
+  border: none;
+}
+
+.landingPage .button-wrapper button:focus {
+  border: none;
+  outline: none;
+  background: #cf112b;
+}
+
+.landingPage .button-wrapper button:active {
+  background: #cf112b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.landingPage .button-wrapper button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=landingPage.css.map */

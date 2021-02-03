@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+  height: 150px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid green;
+  color: #cf112b;
+  border-radius: 10px;
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .subtitle {
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
