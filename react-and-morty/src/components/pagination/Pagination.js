@@ -1,12 +1,41 @@
-import React, {useState} from "react";
-
+import React, {useState, Component} from "react";
 import "./pagination.css";
-import leftArrow from "../../images/left-arrow.png";
-import rightArrow from "../../images/right-arrow.png";
+//import leftArrow from "../../images/left-arrow.png";
+//import rightArrow from "../../images/right-arrow.png";
 import { mainUrls } from "../../api/dataRoutes";
 
+import Pagination from "react-js-pagination";
+/*require("bootstrap/less/bootstrap.less");*/
 
-function Paginator() {
+class Paginator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activePage: 3
+    };
+  }
+
+  handlePageChange(pageNumber) {
+    console.log(`active page is ${pageNumber}`);
+    this.setState({activePage: pageNumber});
+  }
+
+  render() {
+    return (
+      <div className="pag-main">
+        <Pagination
+          activePage={this.state.activePage}
+          itemsCountPerPage={10}
+          totalItemsCount={450}
+          pageRangeDisplayed={5}
+          onChange={this.handlePageChange}
+        />
+      </div>
+    );
+  }
+}
+
+/*function Paginator() {
 
 	function pageLeft() {
 		page < 2 ? setPage(1) : setPage(page -1);
@@ -25,6 +54,6 @@ function Paginator() {
 			<img src={rightArrow} alt="arrow" onClick={pageRight}></img>
 		</div>
 	)
-}
+}*/
 
 export default Paginator;
