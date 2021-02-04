@@ -1,42 +1,20 @@
 import React from "react";
 import "./App.css";
-import { useCharacters, useLocations } from "./api/useData";
-import Description from "./components/description/description";
-
+import LandingPage from "./components/landingPage/LandingPage";
+import Characters from "./components/characters/Characters";
+import Locations from "./components/locations/Locations";
 
 function App() {
-  const characters = useCharacters(1);
-  const locations = useLocations(1);
-
-  console.log(typeof characters.results);
-  console.log("Characters data: ");
-  console.log(characters);
-  console.log("Locations data: ");
-  console.log(locations);
-
-  
-  
-  return(
-    <div className="landingPage">
-      <div className="button-wrapper">
-        <button className="btn-char" onMouseDown={showDescript} onMouseUp={hideDescript}>Characters</button>
-        <button className="btn-loc" onMouseDown={showDescript} onMouseUp={hideDescript}>Locations</button>
-      </div>
-      <Description />
+  return (
+    <div className="mainContainer">
+      <LandingPage />
+      <Characters />
+      <Locations />
+      <a href="./index.html" className="homeBtn">
+        Home
+      </a>
     </div>
   );
-
-  function showDescript() {
-    const _descript = document.querySelector('.descript');
-    _descript.style.visibility = 'visible';
-  }
-
-  function hideDescript() {
-    const _descript = document.querySelector('.descript');
-    _descript.style.visibility = 'hidden';
-  }
-
-  
 }
 
 export default App;

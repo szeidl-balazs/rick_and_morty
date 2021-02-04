@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  width: 250px;
+  height: 150px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid green;
+  color: white;
+  border-radius: 10px;
+  font-size: 11px;
+  background-color: #191919;
+
+  .cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #cf112b;
+    .subtitle {
+      color: white;
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+  .charSheet {
+    position: absolute;
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    width: 130px;
+    height: 130px;
+  }
+
+  .charProps {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+  }
+}

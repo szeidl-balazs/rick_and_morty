@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+.containerLocations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .paginationLocations {
+    display: none;
+    justify-content: center;
+    background-color: white;
+    margin-top: 20px;
+    width: 360px;
+    border-radius: 8px;
+  }
+}
+
+.locations {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.pag-main {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 30px;
+  border: 2px solid green;
+  border-radius: 3px;
+  background-color: #cf112b;
+}
+
+.pageNumDisp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  color: white;
+  font-weight: 400;
+  font-weight: 400;
+  font-family: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  &:hover {
+    color: green;
+    transform: scale(1.3);
+  }
+}

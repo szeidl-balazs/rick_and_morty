@@ -6,15 +6,21 @@
 }
 
 .descript {
-  visibility: hidden;
+  display: block;
   background-color: rgba(255, 255, 255, 0.157);
   color: #cf112b;
-  font-size: 10px;
+  font-size: 16px;
   line-height: 1;
   position: absolute;
-  padding: 5px;
-  width: 60vw;
-  bottom: 1px;
+  padding: 10px;
+  width: 600px;
+  bottom: 55px;
   text-align: justify;
+  min-width: 480px;
+  border-radius: 10px;
+}
+
+.descript p {
+  line-height: 1.2;
 }
 /*# sourceMappingURL=description.css.map */
